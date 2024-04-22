@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,900");
+
+
+/* General Styles */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif ;
+}
+
+
+/* header section */
+.navbar {
+   
+    color: #010101; /* Your text color */
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Initial layout  */
+  }
+  
+  .menu-btn {
+    cursor: pointer;
+    display: flex; /* Allow the icon to be centered vertically */
+    align-items: center;
+  }
+  
+  .logo {
+    align-items: center;
+    font-weight:lighter ;
+    font-size: 40px;
+    font-family: fira sans ;
+  }
+  .sub{
+    font-size: 23px;
+    font-weight: bolder;
+    color: rgb(98, 194, 14);
+    padding-right: 2rem;
+  }
+  
+  .fa-bars {
+    font-size: 24px;
+    padding-left: 2rem;
+  }
+  
+
+
+/* Search section */
+
+/* Background Image */
+.background-img {
+    background-image: url("images/search.jpg"); 
+    background-size: cover;           /* Stretch image to cover the entire viewport */
+    background-repeat: no-repeat;     /* Prevent image repetition */
+    background-attachment: fixed;     /* Keep the image fixed while scrolling */
+    width: 100vw;                     /* Occupy full viewport width */
+    height: 50vh;                    /* Occupy full viewport height */
+    position: relative;               /* To position elements within it */
+    /* padding-bottom: 50px; */
+  }
+  
+  /* Search Container */
+  .search-container {
+    position: absolute;                  /* To position within the background-img */
+    top: 50%;                            /* Vertically center */
+    left: 50%;                           /* Horizontally center */
+    transform: translate(-50%, -50%);    /* Adjust positioning as needed */
+    width: 50%;                          /* Adjust the width as desired */
+    margin: 0;                            
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .search-container img {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    height: 40px; /* Adjust as needed */
+  } 
+  
+  /* Input Field */
+.search-container input[type="text"] {
+    width: calc(100% - 60px); /*  Space for images */
+    padding: 12px 20px; 
+    border: 2px solid #ddd;  
+    border-radius: 5px;
+    box-sizing: border-box; 
+  }
+  
+  /* Search Icon (on the right) */
+  .search-container .fa-search {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%); /* Vertical centering */
+    color: #999; /* Or the color you prefer */
+  }
+  
+
+/* --------------------------------------------------------------------------------------------------------- */
+  /* work ssection */
+  .all {
+    display: flex;
+    align-items: flex-start; /* Align to the top */
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px; /* Add some padding around the content */
+  }
+  
+  .cards {
+    width: 100%; 
+    display: flex;     
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 1em; 
+    grid-row: 1 / 4;
+  }
+  
+  .card {
+    flex: 1 1 calc(50% - 0.5em); /* Grow to fill space, two cards per row */
+    /* Other card styles … */
+  } 
+  
+  /* Responsive adjustment for smaller screens */
+  @media (max-width: 768px) {
+    .card {
+      flex: 1 1 calc(100% - 0.5em); /* One card per row on smaller screens */
+    }
+  }
+  
+/* ------------------------------------------------------------------------------------------- */
+
+
+
+  
+  .grid-item {
+    background-color: rgba(184, 180, 180, 0.362);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  .item5 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    font-family: fira sans;
+    font-weight: lighter;
+  }
+  
+
+  .button4{
+    background-color: #ffffff; /* Green */
+    border: none;
+    color: rgb(151, 239, 74);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+
+
+
+.grid-container-collection{
+    background-color: rgb(151, 239, 74);
+    text-align: center;
+    height: 30vh;
+    padding: 20px;
+}
+
+
+
+
+
+.grid-container-footup{
+    background-color: rgb(151, 239, 74);
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* ... other styles ... */
+
+.grid-container-footer {
+    background-color: rgba(40, 40, 40, 0.532);
+    text-align: center;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Set up 4 columns */
+    gap: 20px; /* Add gap between grid items */
+}
+
+.item1 {
+    grid-column: span 2; /* Span 2 columns */
+}
+
+.item4,
+.item2,
+.item3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
